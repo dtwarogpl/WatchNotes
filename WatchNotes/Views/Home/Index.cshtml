@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style> 
+    <form action="Home/NoteForm" method="post" style="display: flex!important; flex-direction: column; margin-top: 50px; min-height: 30px">
+        <input autofocus type="text" id="inputField" style ="height: 100px; background: #1b1818; color: white;border:0" name="Content" />
+        <input type="submit" value="Zapisz"  style="width: 300px; margin-top: 20px; height: 100px; background: #1b1818; color: white; border: 0"/>
+    </form>
+    <script>
+        window.onload = function() {
+            document.getElementById("inputField").focus();
+        }
+    </script>
+</div>
